@@ -9,15 +9,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Startup Name Generator',
-      theme: ThemeData(
-        primaryColor: Colors.white
-      ),
-      home: RandomWords(),
-    );
+        title: 'Layout Example',
+        theme: ThemeData(
+          primaryColor: Colors.red,
+        ),
+        home: Scaffold(appBar:
+            AppBar(
+              title: Text('Layaout Example'),
+            ),
+            body: Row(
+              children: <Widget>[ Text("hoho"), Text("sore")],
+        )));
   }
-// #enddocregion build
 }
+// #enddocregion build
 // #enddocregion MyApp
 
 // #docregion RWS-var
